@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../imgs/pattern-basic.png');
+}
+
+.header {
+    border-top: solid 5px #8d8f8c;
+}
+
+.logo_main {
+    height: 52px;
+    background-image: url('../imgs/veeam_logo_mdp_52.png');
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.logo_mdp {
+    height: 39px;
+    background-size: 100%;
+    background-image: url('../imgs/mdb_n1_backup.png');
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+.breadcrumbs {
+    background-color: #54b948;
+    padding-left: 237px;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+}
+
+.breadcrumbs-item {
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+
+}
+
+.breadcrumbs-current {
+    font-weight: bold;
+}
+
+.breadcrumbs-current:before {
+    content: '';
+    position: absolute;
+}
+
+.content {
+    background-color: #fff;
+    border: solid 1px #dad4d4;
+}
+
+.tab_content_1 {
+    margin: 15px;
+}
+
+.img_content_header {
+    width: 100%;
+}
+
+.content_video {
+    width: 140px;
+    height: 100px;
+}
+
+.register {
+    border: solid 2px #dad4d4;
+}
+
+.register_content {
+    background-color: #dad4d4;
+    margin: 10px;
+}
+
+.form_register {
+    padding-top: 50px;
+    padding-right: 15px;
+    text-align: right;
+
+}
+
+.form_register_item {
+    width: 150px;
+    height: 20px;
+    margin-bottom: 12px;
+
+}
+
+.form_register_item:last-child {
+    margin-bottom: 0;
+}
