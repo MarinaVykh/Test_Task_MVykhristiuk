@@ -9,7 +9,7 @@
 
 <body>
 
-<header class="header">
+<header class="header__container">
     <div class="container">
         <div class="row">
             <div class="col-xs-7">
@@ -24,11 +24,10 @@
 
 <main>
 
-    <div class="breadcrumbs">
-        <!--не могу паддинги выставить, и бутстраповские стили для ссылок убрать, каша получилась-->
-        <ul class="">
-            <li><a href="#" class="breadcrumbs-item">White Papers</a></li>
-            <li class="breadcrumbs-item breadcrumbs-current">Annual Data Protection Report</li>
+    <div class="main__breadcrumbs">
+        <ul class="breadcrumbs">
+            <li><a href="#" class="breadcrumbs__item">White Papers</a></li>
+            <li class="breadcrumbs__item breadcrumbs__current">Annual Data Protection Report</li>
         </ul>
     </div>
 
@@ -36,19 +35,29 @@
         <div class="row">
             <div class="col-xs-12">
 
-                <ul class="tabs">
-                    <li class="tab_1 active">Enterprise Edition</li> <!--нужно ли использовать id ??-->
-                    <li class="tab_2"></li>
+                <ul class="tabs" id="tabs">
+                    <li class="tabs__item" data-content="first">Enterprise Edition</li>
+                    <li class="tabs__item" data-content="second">SMB Edition</li>
                 </ul>
 
-                <div class="content">
-                    <div class=" tab_1 tab_content_1">
-                        <div class="content_header">
-                            <img class="img_content_header" src="./imgs/Annual_DP_Report_2013_header_LP.png"
-                                 alt="New Report">
+                <div class="content" id="contents">
+                    <div class="tabs__content" data-content="first">
+                        <div class="content__header">
+                            <div class="content__header-img">
+                                <div class="content__header_title">
+                                    <div class="content__header-row">
+                                        <p>Annual Data Protection Report 2013:<span>Enterprise and SMB Editions</span>
+                                        </p>
+                                    </div>
+                                    <div class="content__header-row">
+                                        <p>Survey of 500 enterprises and 500 small / medium businesses across USA, UK,
+                                            Germany and France/p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <section class="content_main">
+                        <section class="content__main">
                             <div class="row">
                                 <div class="col-xs-7">
                                     <p>SMB Edition <br>
@@ -58,7 +67,7 @@
                                     </p>
                                     <div class="row">
                                         <div class="col-xs-4">
-                                            <img class="content_video " src="./imgs/annual-smb-report.jpg" alt="">
+                                            <img class="content__video " src="./imgs/annual-smb-report.jpg" alt="">
                                         </div>
                                         <div class="col-xs-8">
                                             <p>
@@ -74,25 +83,59 @@
                                                 $150,000 or more per hour
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="infographics__title">
+                                                <p>Infographics - SMB challenges with data protection in brief</p>
+                                            </div>
+                                            <div class="infographics__item">
+                                                <img src="./imgs/smb_ingographics_web_preview_1_cut.png" alt="">
+                                            </div>
+                                            <div class="infographics__item">
+                                                <img src="./imgs/smb_ingographics_web_preview_2_cut.png" alt="">
+                                            </div>
+                                            <div class="infographics__row">
+                                                <p>Click to view the full-size infographics</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-xs-5">
                                     <div class="register">
-                                        <div class="register_content">
+                                        <div class="register__content">
+                                            <div class="register__title">
+                                                <p>Register here</p>
+                                            </div>
                                             <div class="row">
-                                                <div class="col-xs-5">gggg</div>
+                                                <div class="col-xs-5">
+                                                    <div class="register__fields">
+                                                        <ul class="register__fields_name">
+                                                            <li class="register__fields_name-item">First name</li>
+                                                            <li class="register__fields_name-item">Last name</li>
+                                                            <li class="register__fields_name-item">Business email</li>
+                                                            <li class="register__fields_name-item">Company</li>
+                                                            <li class="register__fields_name-item">Job title</li>
+                                                            <li class="register__fields_name-item">Country</li>
+                                                            <li class="register__fields_name-item">State</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                                 <div class="col-xs-7">
-                                                    <div class="form_register">
+                                                    <div class="register__form">
                                                         <form action="">
-                                                            <p>First name<input type="text" class="form_register_item"></p>
-                                                            <input type="text" class="form_register_item">
-                                                            <input type="text" class="form_register_item">
-                                                            <input type="text" class="form_register_item">
-                                                            <input type="text" class="form_register_item">
-                                                            <input type="text" class="form_register_item">
-                                                            <input type="text" class="form_register_item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
                                                         </form>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="register__button">
+                                                <button class="register__submit" type="submit">Register</button>
                                             </div>
                                         </div>
                                     </div>
@@ -105,13 +148,157 @@
                     </div>
 
 
-                    <div class=" tab_2 tab_content_2"></div>
+                    <div class="tabs__content" data-content="second">
+                        <div class="content__header">
+                            <div class="content__header-img">
+                                <div class="content__header_title">
+                                    <div class="content__header-row">
+                                        <p>Annual Data Protection Report 2013:<span>Enterprise and SMB Editions</span>
+                                        </p>
+                                    </div>
+                                    <div class="content__header-row">
+                                        <p>Survey of 500 enterprises and 500 small / medium businesses across USA, UK,
+                                            Germany and France/p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="content__main">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <p>SMB Edition <br>
+                                        85% of SMBs Experiencing Problems with Backup and
+                                        <Recoverybr></Recoverybr>
+                                        Report shows 55% will change backup tool by 2014
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <img class="content__video " src="./imgs/annual-smb-report.jpg" alt="">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <p>
+                                                85% of SMBs are experiencing cost-related challenges with backup and
+                                                recovery, 83% with capability and 80% with complexity
+                                                <br>
+                                                67% of the virtual environment is backed-up meaning that almost a third
+                                                of SMBs’ virtual infrastructure is unprotected
+                                                <br>
+                                                More than 1 in 6 (17%) recoveries of backed-up machines cause problems
+                                                <br>
+                                                41% of SMBs stated that downtime in the event of an IT failure costs
+                                                $150,000 or more per hour
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="infographics__title">
+                                                <p>Infographics - SMB challenges with data protection in brief</p>
+                                            </div>
+                                            <div class="infographics__item">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="infographics__item">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="infographics__row">
+                                                <p>Click to view the full-size infographics</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5">
+                                    <div class="register">
+                                        <div class="register__content">
+                                            <div class="register__title">
+                                                <p>Register here</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-5">
+                                                    <div class="register__fields">
+                                                        <ul class="register__fields_name">
+                                                            <li class="register__fields_name-item">First name</li>
+                                                            <li class="register__fields_name-item">Last name</li>
+                                                            <li class="register__fields_name-item">Business email</li>
+                                                            <li class="register__fields_name-item">Company</li>
+                                                            <li class="register__fields_name-item">Job title</li>
+                                                            <li class="register__fields_name-item">Country</li>
+                                                            <li class="register__fields_name-item">State</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-7">
+                                                    <div class="register__form">
+                                                        <form action="">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                            <input type="text" class="register__form-item">
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="register__button">
+                                                <button class="register__submit" type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 </main>
+
+<footer>
+    <div class="footer__container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="footer__nav">
+                        <ul class="footer__nav_items">
+                            <li><a href="#" class="footer__nav-item footer__divider footer__divider-1">White Papers</a>
+                            </li>
+                            <li><a href="#" class="footer__nav-item footer__divider footer__divider-2">Virtualisation
+                                Webinars</a></li>
+                            <li><a href="#" class="footer__nav-item footer__divider footer__divider-3">Product Demos</a>
+                            </li>
+                            <li><a href="#" class="footer__nav-item">Contact Sales</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="footer__social">
+                        <button class="footer__social_btn footer__social_btn-twitter" type="button">Tweet</button>
+                        <button class="footer__social_btn footer__social_btn-linkedin" type="button">Share</button>
+                        <button class="footer__social_btn footer__social_btn-google" type="button"></button>
+                        <button class="footer__social_btn footer__social_btn-facebook" type="button">Like</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer__row">
+                        <p>Copyright © 2015 Veeam® Software. Privacy policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
