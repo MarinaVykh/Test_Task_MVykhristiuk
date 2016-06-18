@@ -30,9 +30,8 @@ body {
 
 .main__breadcrumbs {
     background-color: #54b948;
-    padding-left: 237px;
-    padding-top: 10px;
-    padding-bottom: 7px;
+    padding: 10px;
+    padding-left: 27px;
 }
 
 .breadcrumbs {
@@ -57,10 +56,8 @@ body {
     position: absolute;
 }
 
-
 .tabs__container {
     margin-top: 15px;
-
 
 }
 
@@ -78,15 +75,18 @@ body {
     color: #000;
     border: solid 1px #dad4d4;
     border-bottom: none;
+    border-radius: 3px;
     padding: 10px 20px;
     margin-right: 1px;
     text-align: center;
     cursor: pointer;
+
 }
 
 .tabs__item_active {
     background-color: #fff;
-    border-bottom: white;
+    border-bottom: #fff;
+    /*padding-bottom: 11px;*/
 }
 
 .tabs__item:last-child {
@@ -96,6 +96,7 @@ body {
 .content {
     background-color: #fff;
     border: solid 1px #dad4d4;
+    border-radius: 5px;
 
 }
 
@@ -129,10 +130,26 @@ body {
     padding-left: 110px;
 }
 
+.content__video {
+    position: relative;
+    z-index: 1;
+}
+
 .content__video-1 {
-     width: 140px;
-     height: 100px;
- }
+    width: 140px;
+    height: 100px;
+}
+
+.content__video-1:before {
+    content: '';
+    background-image: url(../imgs/hands_on_guide_click.png);
+    height: 54px;
+    width: 143px;
+    position: relative;
+    z-index: 2;
+
+
+}
 
 .register {
     border: solid 2px #dad4d4;
@@ -149,6 +166,19 @@ body {
 
 .register__title {
     text-align: center;
+}
+
+.register__fields {
+
+}
+
+.register__fields_names {
+list-style: none;
+
+}
+
+.register__fields_name-item {
+
 }
 
 .register__form {
@@ -217,7 +247,7 @@ body {
     padding-right: 35px;
 }
 
-.footer__divider:after{
+.footer__divider:after {
     content: '';
     position: absolute;
     top: 3px;
@@ -259,11 +289,11 @@ body {
 .footer__social_btn-twitter:before {
     content: '';
     background-image: url(../imgs/twitter1.png);
-    display:inline-block;
+    display: inline-block;
     position: relative;
     height: 15px;
     width: 15px;
-    background-size:15px;
+    background-size: 15px;
 
 }
 

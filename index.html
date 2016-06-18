@@ -24,11 +24,19 @@
 
 <main>
 
+
     <div class="main__breadcrumbs">
-        <ul class="breadcrumbs">
-            <li><a href="#" class="breadcrumbs__item">White Papers</a></li>
-            <li class="breadcrumbs__item breadcrumbs__current">Annual Data Protection Report</li>
-        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="breadcrumbs">
+                        <li><a href="#" class="breadcrumbs__item">White Papers</a></li>
+                        <li class="breadcrumbs__item breadcrumbs__current">Annual Data Protection Report</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="container">
@@ -49,7 +57,7 @@
 
 
                 <div class="content" id="contents">
-                    <div class="tabs__content" data-content="first">
+                    <div class="tabs__content" data-content="second">
                         <div class="content__header">
                             <div class="content__header-img">
                                 <div class="content__header_title">
@@ -74,7 +82,9 @@
                                     </p>
                                     <div class="row">
                                         <div class="col-xs-4">
-                                            <img class="content__video-1" src="./imgs/annual-smb-report.jpg" alt="">
+                                            <div class="content__video">
+                                                <img class="content__video-1" src="./imgs/annual-smb-report.jpg">
+                                            </div>
                                         </div>
                                         <div class="col-xs-8">
                                             <p>
@@ -114,33 +124,31 @@
                                             <div class="register__title">
                                                 <p>Register here</p>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-xs-5">
-                                                    <div class="register__fields">
-                                                        <ul class="register__fields_name">
-                                                            <li class="register__fields_name-item">First name</li>
-                                                            <li class="register__fields_name-item">Last name</li>
-                                                            <li class="register__fields_name-item">Business email</li>
-                                                            <li class="register__fields_name-item">Company</li>
-                                                            <li class="register__fields_name-item">Job title</li>
-                                                            <li class="register__fields_name-item">Country</li>
-                                                            <li class="register__fields_name-item">State</li>
-                                                        </ul>
-                                                    </div>
+
+                                            <div class="register__fields">
+                                                <ul class="register__fields_names">
+                                                    <li class="register__fields_name-item">First name</li>
+                                                    <li class="register__fields_name-item">Last name</li>
+                                                    <li class="register__fields_name-item">Business email</li>
+                                                    <li class="register__fields_name-item">Company</li>
+                                                    <li class="register__fields_name-item">Job title</li>
+                                                    <li class="register__fields_name-item">Country</li>
+                                                    <li class="register__fields_name-item">State</li>
+                                                </ul>
+
+
+                                                <div class="register__form">
+                                                    <form action="">
+                                                        <input type="text" class="register__form-item">
+                                                        <input type="text" class="register__form-item">
+                                                        <input type="text" class="register__form-item">
+                                                        <input type="text" class="register__form-item">
+                                                        <input type="text" class="register__form-item">
+                                                        <input type="text" class="register__form-item">
+                                                        <input type="text" class="register__form-item">
+                                                    </form>
                                                 </div>
-                                                <div class="col-xs-7">
-                                                    <div class="register__form">
-                                                        <form action="">
-                                                            <input type="text" class="register__form-item">
-                                                            <input type="text" class="register__form-item">
-                                                            <input type="text" class="register__form-item">
-                                                            <input type="text" class="register__form-item">
-                                                            <input type="text" class="register__form-item">
-                                                            <input type="text" class="register__form-item">
-                                                            <input type="text" class="register__form-item">
-                                                        </form>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                             <div class="register__button">
                                                 <button class="register__submit" type="submit">Register</button>
@@ -156,7 +164,7 @@
                     </div>
 
 
-                    <div class="tabs__content" data-content="second">
+                    <div class="tabs__content" data-content="first">
                         <div class="content__header">
                             <div class="content__header-img">
                                 <div class="content__header_title">
@@ -181,8 +189,9 @@
                                     </p>
                                     <div class="row">
                                         <div class="col-xs-4">
-                                            <img class="content__video-2" src="./imgs/preview-annual-dp-report.png"
-                                                 alt="">
+                                            <div class="content__video">
+                                                <img class="content__video-2" src="./imgs/preview-annual-dp-report.png">
+                                            </div>
                                         </div>
                                         <div class="col-xs-8">
                                             <p>
@@ -217,7 +226,7 @@
                                             <div class="row">
                                                 <div class="col-xs-5">
                                                     <div class="register__fields">
-                                                        <ul class="register__fields_name">
+                                                        <ul class="register__fields_names">
                                                             <li class="register__fields_name-item">First name</li>
                                                             <li class="register__fields_name-item">Last name</li>
                                                             <li class="register__fields_name-item">Business email</li>
