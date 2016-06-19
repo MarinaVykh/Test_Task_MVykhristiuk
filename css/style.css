@@ -44,16 +44,17 @@ body {
     color: #fff;
     text-decoration: none;
     float: left;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 
 .breadcrumbs__current {
     font-weight: bold;
 }
 
-.breadcrumbs__current:before {
-    content: '';
-    position: absolute;
+.breadcrumbs__item-divider {
+    color: #444;
+    display: inline-block;
+    margin-right: 16px;
 }
 
 .tabs__container {
@@ -89,7 +90,7 @@ body {
 .tabs__item_active {
     background-color: #fff;
     border-bottom: #fff;
-    /*padding-bottom: 11px;*/
+    /*padding-bottom: 12px;*/
 }
 
 .tabs__item:last-child {
@@ -134,7 +135,6 @@ body {
     text-align: justify;
 }
 
-
 .content__header-white {
     font-size: 25px;
     font-weight: bold;
@@ -162,8 +162,16 @@ body {
     position: relative;
 }
 
-.content__main-row_text{
+.content__main-row_text {
     margin-bottom: 10px;
+}
+
+.content__main-rows_text-tab2 {
+    width: 310px;
+}
+
+.content__main-row_text:last-child {
+    margin-bottom: 25px;
 }
 
 .content__main-row_text:before {
@@ -175,25 +183,45 @@ body {
     left: -17px;
 }
 
-.content__main-row_1:before{
+.content__main-row_title-tab2 {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.content__main-row_text-tab2 {
+    position: absolute;
+    left: -18px;
+    top: -20px;
+}
+
+.content__main-bg_tab1-1:before {
     top: 5px;
 }
 
-.content__main-row_2:before{
+.content__main-bg_tab1-2:before {
     top: 65px;
 }
 
-.content__main-row_3:before {
+.content__main-bg_tab1-3:before {
     top: 109px;
 }
 
-.content__main-row_4:before{
+.content__main-bg_tab1-4:before {
     top: 153px;
 }
 
-.content__main-row_text:last-child {
-    margin-bottom: 25px;
+.content__main-bg_tab2-1:before {
+    top: 4px;
 }
+
+.content__main-bg_tab2-2:before {
+    top: 65px;
+}
+
+.content__main-bg_tab2-3:before {
+    top: 143px;
+}
+
 .content__main-black {
     font-size: 14px;
     font-weight: 600;
@@ -229,7 +257,6 @@ body {
     bottom: -5px;
     left: -1px;
     cursor: pointer;
-
 }
 
 .content__video-2 {
@@ -237,6 +264,7 @@ body {
     height: 214px;
     background-repeat: no-repeat;
     margin-bottom: 50px;
+    margin-left: 23px;
 }
 
 .content__video-2-click {
@@ -280,7 +308,6 @@ body {
 .register__form-item {
     margin-bottom: 12px;
     position: relative;
-
 }
 
 .register__form-item:last-child {
@@ -354,7 +381,6 @@ body {
 .footer__nav_items {
     list-style: none;
     position: relative;
-
 }
 
 .infographics__row {
@@ -398,13 +424,11 @@ body {
 
 .footer__social {
     float: right;
-
 }
 
 .footer__social-btn {
     list-style: none;
     position: relative;
-
 }
 
 .footer__social-item {
@@ -486,6 +510,7 @@ body {
 
 .privacy_policy {
     color: #1091c7;
+    cursor: pointer;
 }
 
 
