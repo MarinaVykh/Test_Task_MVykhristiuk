@@ -203,6 +203,7 @@
                                                         <li class="register__form-item">
                                                             <label class="register__form-item-names" for="country">Country</label>
                                                             <select type="text" class="register__form-item-input"
+                                                                    onchange="onCountryChanged()"
                                                                     id="country">
                                                                 <option value="Select country">Select country</option>
                                                                 <option value="Brazil">Brazil</option>
@@ -213,18 +214,20 @@
                                                             </select>
                                                         </li>
                                                         <li class="register__form-item">
-                                                            <label class="register__form-item-names"
-                                                                   for="state">State</label>
-                                                            <select type="text" class="register__form-item-input"
-                                                                    id="state">
-                                                                <option value="Select state">Select state</option>
-                                                                <option value="Alabama">Alabama</option>
-                                                                <option value="Alaska">Alaska</option>
-                                                                <option value="Arizona">Arizona</option>
-                                                                <option value="Arkansas">Arkansas</option>
-                                                                <option value="">UK</option>
-                                                                <option value="California">California</option>
-                                                            </select>
+                                                            <div class="state_main" id="us_state_block">
+                                                                <label class="register__form-item-names"
+                                                                       for="state">State</label>
+                                                                <select type="text" class="register__form-item-input"
+                                                                        id="state">
+                                                                    <option value="Select state">Select state</option>
+                                                                    <option value="Alabama">Alabama</option>
+                                                                    <option value="Alaska">Alaska</option>
+                                                                    <option value="Arizona">Arizona</option>
+                                                                    <option value="Arkansas">Arkansas</option>
+                                                                    <option value="">UK</option>
+                                                                    <option value="California">California</option>
+                                                                </select>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                 </form>
@@ -371,7 +374,8 @@
                                                         <li class="register__form-item">
                                                             <label class="register__form-item-names" for="country_2">Country</label>
                                                             <select type="text" class="register__form-item-input"
-                                                                    id="country_2">
+                                                                    id="country_2"
+                                                                    onchange="onCountryChanged_2()">
                                                                 <option value="Select country">Select country</option>
                                                                 <option value="Brazil">Brazil</option>
                                                                 <option value="Canada">Canada</option>
@@ -381,18 +385,20 @@
                                                             </select>
                                                         </li>
                                                         <li class="register__form-item">
-                                                            <label class="register__form-item-names"
-                                                                   for="state_2">State</label>
-                                                            <select type="text" class="register__form-item-input"
-                                                                    id="state_2">
-                                                                <option value="Select state">Select state</option>
-                                                                <option value="Alabama">Alabama</option>
-                                                                <option value="Alaska">Alaska</option>
-                                                                <option value="Arizona">Arizona</option>
-                                                                <option value="Arkansas">Arkansas</option>
-                                                                <option value="">UK</option>
-                                                                <option value="California">California</option>
-                                                            </select>
+                                                            <div class="state_main" id="us_state_block_2">
+                                                                <label class="register__form-item-names"
+                                                                       for="state_2">State</label>
+                                                                <select type="text" class="register__form-item-input"
+                                                                        id="state_2">
+                                                                    <option value="Select state">Select state</option>
+                                                                    <option value="Alabama">Alabama</option>
+                                                                    <option value="Alaska">Alaska</option>
+                                                                    <option value="Arizona">Arizona</option>
+                                                                    <option value="Arkansas">Arkansas</option>
+                                                                    <option value="">UK</option>
+                                                                    <option value="California">California</option>
+                                                                </select>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                 </form>

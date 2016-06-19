@@ -45,6 +45,27 @@ function showContent (content) {
     }
 }
 
+// code duplication to be removed
+var onCountryChanged = function () {
+    var chosenCountryName = document.getElementById("country").value;
+    var state = document.getElementById("us_state_block");
+    if(chosenCountryName == "United States") {
+        state.classList.remove('state_main');
+    } else {
+        state.classList.add('state_main');
+    }
+};
+
+var onCountryChanged_2 = function () {
+    var chosenCountryName = document.getElementById("country_2").value;
+    var state = document.getElementById("us_state_block_2");
+    if(chosenCountryName == "United States") {
+        state.classList.remove('state_main');
+    } else {
+        state.classList.add('state_main');
+    }
+};
+
 function init () {
     var contentName = tabs[0].dataset.content;
     activateTab(contentName);

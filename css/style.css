@@ -338,6 +338,10 @@ body {
     bottom: 3px;
 }
 
+.state_main {
+    display: none;
+}
+
 .register__button {
     padding-top: 42px;
     padding-bottom: 40px;
