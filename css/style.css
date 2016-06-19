@@ -66,16 +66,19 @@ body {
     float: right;
     position: relative;
     z-index: 2;
+    font-size: 0;
 
 }
 
 .tabs__item {
     display: inline-block;
     background-color: #f4f4f4;
-    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
     border: solid 1px #dad4d4;
     border-bottom: none;
-    border-radius: 3px;
+    border-radius: 3px 3px 0 0;
     padding: 10px 20px;
     margin-right: 1px;
     text-align: center;
@@ -128,34 +131,128 @@ body {
 .content__header_title {
     padding-top: 65px;
     padding-left: 110px;
+    text-align: justify;
+}
+
+
+.content__header-white {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    padding-right: 6px;
+}
+
+.content__header-yellow {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffec00;
+}
+
+.content__header-white_light {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.content__main-row_title {
+    margin-bottom: 18px;
+}
+
+.content__main-rows_text {
+    position: relative;
+}
+
+.content__main-row_text{
+    margin-bottom: 10px;
+}
+
+.content__main-row_text:before {
+    content: '';
+    background-color: #444;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    left: -17px;
+}
+
+.content__main-row_1:before{
+    top: 5px;
+}
+
+.content__main-row_2:before{
+    top: 65px;
+}
+
+.content__main-row_3:before {
+    top: 109px;
+}
+
+.content__main-row_4:before{
+    top: 153px;
+}
+
+.content__main-row_text:last-child {
+    margin-bottom: 25px;
+}
+.content__main-black {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+.content__main-black-light_1 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #444;
+}
+
+.content__main-black-light_2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #444;
 }
 
 .content__video {
     position: relative;
-    z-index: 1;
 }
 
 .content__video-1 {
-    width: 140px;
-    height: 100px;
+    background-image: url(../imgs/annual-smb-report.jpg);
+    height: 165px;
+    background-size: cover;
 }
 
-.content__video-1:before {
-    content: '';
-    background-image: url(../imgs/hands_on_guide_click.png);
+.content__video-1-click {
     height: 54px;
     width: 143px;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    cursor: pointer;
 
+}
 
+.content__video-2 {
+    background-image: url(../imgs/preview-annual-dp-report.png);
+    height: 214px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.content__video-2-click {
+    height: 54px;
+    width: 143px;
+    position: absolute;
+    bottom: -30px;
+    left: 2px;
+    cursor: pointer;
 }
 
 .register {
     border: solid 2px #dad4d4;
     border-radius: 5px;
-    width: 380px;
     float: right;
+    width: 380px;
 }
 
 .register__content {
@@ -168,30 +265,21 @@ body {
     text-align: center;
 }
 
-.register__fields {
-
-}
-
-.register__fields_names {
-list-style: none;
-
-}
-
-.register__fields_name-item {
-
-}
-
 .register__form {
     padding-top: 15px;
     padding-right: 15px;
+    padding-left: 15px;
     text-align: right;
 
 }
 
+.register__fields {
+    list-style: none;
+}
+
 .register__form-item {
-    width: 150px;
-    height: 20px;
     margin-bottom: 12px;
+    position: relative;
 
 }
 
@@ -199,8 +287,32 @@ list-style: none;
     margin-bottom: 0;
 }
 
+.register__form-item-names {
+    float: left;
+    padding-right: 30px;
+}
+
+.register__form-item-input:after {
+    border: solid 1px #d0d0d0;
+    height: 15px;
+    width: 15px;
+}
+
+.register__form-item-input {
+    width: 165px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.register__form-item-names:after {
+    content: "*";
+    color: red;
+    position: absolute;
+    bottom: 3px;
+}
+
 .register__button {
-    padding-top: 40px;
+    padding-top: 42px;
     padding-bottom: 40px;
     text-align: center;
 
@@ -216,6 +328,10 @@ list-style: none;
     display: block;
     border-radius: 5px;
     margin: 0 auto;
+}
+
+.infographics__title {
+    margin-bottom: 20px;
 }
 
 .infographics__item {
@@ -239,6 +355,17 @@ list-style: none;
     list-style: none;
     position: relative;
 
+}
+
+.infographics__row {
+    margin: 20px 0 20px 0;
+}
+
+.infographics__click {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1091c7;
 }
 
 .footer__nav-item {
@@ -271,35 +398,94 @@ list-style: none;
 
 .footer__social {
     float: right;
+
 }
 
-.footer__social_btn {
+.footer__social-btn {
+    list-style: none;
+    position: relative;
+
+}
+
+.footer__social-item {
     margin-right: 10px;
-    height: 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
 }
 
-.footer__social_btn:last-child {
+.footer__social-item:last-child {
     margin-right: 0;
 }
 
-.footer__social_btn-twitter {
+.footer__social-twitter {
     color: #000;
+    padding: 5px;
+    padding-left: 18px;
+    background-image: url(../imgs/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 2px;
+    background-position-y: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
 }
 
-.footer__social_btn-twitter:before {
-    content: '';
-    background-image: url(../imgs/twitter1.png);
-    display: inline-block;
-    position: relative;
-    height: 15px;
-    width: 15px;
+.footer__social-linkedin {
+    color: #000;
+    padding: 5px;
+    padding-left: 18px;
+    background-image: url(../imgs/linkedin.png);
     background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 1px;
+    background-position-y: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
 
+.footer__social-google {
+    color: #da1314;
+    padding: 5px;
+    padding-left: 18px;
+    background-image: url(../imgs/google.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 2px;
+    background-position-y: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer__social-facebook {
+    color: #1b3b89;
+    padding: 5px;
+    padding-left: 18px;
+    background-image: url(../imgs/facebook.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 1px;
+    background-position-y: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .footer__row {
     text-align: center;
     color: #747474;
+    margin-top: 40px;
+}
+
+.privacy_policy {
+    color: #1091c7;
 }
 
 
