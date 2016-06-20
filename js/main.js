@@ -1,6 +1,5 @@
-/**
- * Created by ihopeyoudie on 6/17/16.
- */
+//js
+
 //'use strict';
 var tabsParent = document.getElementById('tabs');
 var contentParent = document.getElementById('contents');
@@ -73,3 +72,17 @@ function init () {
 }
 
 init();
+
+
+
+//jquery
+
+$('.open_popup').click(function () {
+    var popup_id = $('#' + $(this).attr("rel"));
+    $(popup_id).show();
+    $('.overlay').show();
+})
+$('.popup .close, .overlay').click(function () {
+    $('.overlay, .popup').hide();
+})
+

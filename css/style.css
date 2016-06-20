@@ -6,6 +6,7 @@
 
 body {
     background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 .header__container {
@@ -59,16 +60,16 @@ body {
 
 .tabs__container {
     margin-top: 15px;
-
+    position: relative;
+    margin-bottom: 53px;
 }
 
 .tabs {
     list-style: none;
     float: right;
+    font-size: 0;
     position: relative;
     z-index: 2;
-    font-size: 0;
-
 }
 
 .tabs__item {
@@ -78,19 +79,18 @@ body {
     font-weight: 600;
     color: #444;
     border: solid 1px #dad4d4;
-    border-bottom: none;
     border-radius: 3px 3px 0 0;
     padding: 10px 20px;
+    border-bottom: none;
     margin-right: 1px;
     text-align: center;
     cursor: pointer;
-
 }
 
 .tabs__item_active {
     background-color: #fff;
     border-bottom: #fff;
-    /*padding-bottom: 12px;*/
+    padding-bottom: 11px;
 }
 
 .tabs__item:last-child {
@@ -101,7 +101,6 @@ body {
     background-color: #fff;
     border: solid 1px #dad4d4;
     border-radius: 5px;
-
 }
 
 .tabs__content {
@@ -109,13 +108,10 @@ body {
     display: none;
     position: relative;
     z-index: 1;
-
 }
 
 .tabs__content_active {
     display: block;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
 }
 
 .content__main {
@@ -517,8 +513,51 @@ body {
     cursor: pointer;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+}
 
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 40%;
+    left: 50%;
+    margin: -100px 0 0 -245px;
+    border: solid 4px #272727;
+    border-radius: 3px;
+    height: 368px;
+    width: 488px;
 
+}
+
+.close {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background: #272727;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    position: absolute;
+    top: -4px;
+    right: -25px;
+
+}
 
 
 

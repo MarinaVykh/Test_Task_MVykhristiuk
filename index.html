@@ -5,6 +5,7 @@
     <title>Test_Task</title>
     <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,9 @@
                 <div class="col-xs-12">
                     <ul class="breadcrumbs">
                         <li><a href="#" class="breadcrumbs__item">White Papers</a></li>
-                        <li class="breadcrumbs__item breadcrumbs__current"> <span class="breadcrumbs__item-divider">&#187</span> Annual Data Protection Report</li>
+                        <li class="breadcrumbs__item breadcrumbs__current"><span
+                                class="breadcrumbs__item-divider">&#187</span> Annual Data Protection Report
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -42,20 +45,12 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-
-
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="tabs__container">
-                            <ul class="tabs" id="tabs">
-                                <li class="tabs__item" data-content="first">Enterprise Edition</li>
-                                <li class="tabs__item" data-content="second">SMB Edition</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="tabs__container">
+                    <ul class="tabs" id="tabs">
+                        <li class="tabs__item" data-content="first">Enterprise Edition</li>
+                        <li class="tabs__item" data-content="second">SMB Edition</li>
+                    </ul>
                 </div>
-
-
                 <div class="content" id="contents">
                     <div class="tabs__content" data-content="second">
                         <div class="content__header">
@@ -100,7 +95,7 @@
                                         <div class="col-xs-5">
                                             <div class="content__video content__video-1">
                                                 <img src="./imgs/hands_on_guide_click.png"
-                                                     class="content__video-1-click">
+                                                     class="content__video-1-click open_popup" rel="popup_video_tab-2">
                                             </div>
 
                                         </div>
@@ -195,7 +190,7 @@
                                                                 title</label>
                                                             <select type="text" class="register__form-item-input"
                                                                     id="job_title">
-                                                                <option value="Select job description<">Select job
+                                                                <option value="Select job description">Select job
                                                                     description
                                                                 </option>
                                                             </select>
@@ -282,7 +277,7 @@
                                         <div class="col-xs-4">
                                             <div class="content__video content__video-2">
                                                 <img src="./imgs/hands_on_guide_click.png"
-                                                     class="content__video-2-click">
+                                                     class="content__video-2-click open_popup" rel="popup_video_tab-1">
                                             </div>
                                         </div>
                                         <div class="col-xs-8">
@@ -461,6 +456,21 @@
         </div>
     </div>
 </footer>
+
+
+<div class="overlay"></div>
+<div class="popup" id="popup_video_tab-1">
+    <span class="close">X</span>
+    <iframe width="480" height="360" src="https://www.youtube.com/embed/klModGpSKtc" frameborder="0" allowfullscreen></iframe>
+
+</div>
+
+<div class="popup" id="popup_video_tab-2">
+    <span class="close">X</span>
+    <iframe width="480" height="360" src="https://www.youtube.com/embed/klModGpSKtc" frameborder="0" allowfullscreen></iframe>
+
+</div>
+
 
 <script src="js/main.js"></script>
 
