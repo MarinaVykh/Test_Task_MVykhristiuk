@@ -73,8 +73,6 @@ function init () {
 
 init();
 
-
-
 //jquery
 
 $('.open_popup').click(function () {
@@ -82,7 +80,34 @@ $('.open_popup').click(function () {
     $(popup_id).show();
     $('.overlay').show();
 })
+
+
 $('.popup .close, .overlay').click(function () {
-    $('.overlay, .popup').hide();
+    $('.overlay, .popup').hide() .remove();
 })
+
+
+// $(document).ready(function(){
+//     $(".close").click(function(){
+//         setTimeout(
+//             function() {
+//                 location.reload();
+//             }, 1000
+//         );
+//     });
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
