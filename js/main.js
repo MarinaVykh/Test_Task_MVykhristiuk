@@ -24,7 +24,7 @@ var onTabClick = function (e) {
 
 tabsParent.addEventListener('click', onTabClick)
 
-function activateTab (content) {
+function activateTab(content) {
     for (var i = 0; i < tabs.length; i++) {
         if (tabs[i].dataset.content === content) {
             tabs[i].classList.add('tabs__item_active');
@@ -34,7 +34,7 @@ function activateTab (content) {
     }
 }
 
-function showContent (content) {
+function showContent(content) {
     for (var i = 0; i < contents.length; i++) {
         if (contents[i].dataset.content === content) {
             contents[i].classList.add('tabs__content_active');
@@ -48,7 +48,7 @@ function showContent (content) {
 var onCountryChanged = function () {
     var chosenCountryName = document.getElementById("country").value;
     var state = document.getElementById("us_state_block");
-    if(chosenCountryName == "United States") {
+    if (chosenCountryName == "United States") {
         state.classList.remove('state_main');
     } else {
         state.classList.add('state_main');
@@ -58,14 +58,14 @@ var onCountryChanged = function () {
 var onCountryChanged_2 = function () {
     var chosenCountryName = document.getElementById("country_2").value;
     var state = document.getElementById("us_state_block_2");
-    if(chosenCountryName == "United States") {
+    if (chosenCountryName == "United States") {
         state.classList.remove('state_main');
     } else {
         state.classList.add('state_main');
     }
 };
 
-function init () {
+function init() {
     var contentName = tabs[0].dataset.content;
     activateTab(contentName);
     showContent(contentName);
@@ -83,7 +83,8 @@ $('.open_popup').click(function () {
 
 
 $('.popup .close, .overlay').click(function () {
-    $('.overlay, .popup').hide() .remove();
+    $('.overlay, .popup').hide();
+        //.remove();
 })
 
 
